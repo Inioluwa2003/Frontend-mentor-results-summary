@@ -1,0 +1,135 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-family: myFirstFont;
+}
+main{
+    display: grid;
+    width: 600px;
+    grid-template-columns: 1fr 1fr;
+    box-shadow:  20px 15px 20px 20px hsl(221, 100%, 96%);
+    border-radius: 20px;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+    src: url(./assets/fonts/static/HankenGrotesk-Bold.ttf);
+    src: url(./assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+    src: url(./assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+.total{
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px;
+}
+.total p{
+    color: hsl(241, 100%, 89%);
+}
+.total b,h1{
+    color: hsl(0, 0%, 100%);
+}
+.score{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    height: 130px;
+    width: 130px;
+    margin-left: 55px;
+    border-radius: 100%;
+    padding: 7px;
+}
+div span{
+    color: white;
+    font-size: 50px;
+} 
+.summary{
+    padding: 15px;
+}
+.reaction{
+    display: flex;
+    background-color: hsla(0, 100%, 67%, 0.082); 
+    padding-left: 10px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+.rea{
+    color: hsl(0, 100%, 67%);
+    padding-right: 62px;
+    padding-left: 10px;
+}
+.memory{
+    display: flex;
+    background-color: hsla(39, 100%, 56%, 0.089);
+    padding-left: 10px;
+    margin-bottom: 12px;
+    border-radius: 10px
+}
+.mem{
+    color: hsl(39, 100%, 56%);
+    padding-right: 62px;
+    padding-left: 10px;
+}
+.verbal{
+    display: flex;
+    background-color: hsla(166, 100%, 37%, 0.103);
+    padding-left: 10px;
+    margin-bottom: 12px;
+    border-radius: 10px
+}
+.ver{
+    color: hsl(166, 100%, 37%);
+    padding-right: 71px;
+    padding-left: 10px;
+}
+.visual{
+    display: flex;
+    background-color: hsla(234, 85%, 45%, 0.116);
+    padding-left: 10px;
+    margin-bottom: 12px;
+    border-radius: 10px
+}
+.vis{
+    color: hsl(234, 85%, 45%);
+    padding-right: 71px;
+    padding-left: 10px;
+}
+button{
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+@media(max-width: 375px){
+    main{
+        min-height: 100vh;
+        width: 370px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .total{
+        border-radius: 0 0 20px 20px;
+    }
+    .score{
+        margin-left: 85px;
+    }
+    .summary{
+        margin-top: -15px;
+    }
+    .rea, .mem{
+        padding-right: 120px;
+    }
+    .ver, .vis{
+        padding-right: 135px;
+    }
+}
